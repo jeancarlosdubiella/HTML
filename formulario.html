@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato - Entra21</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="https://cdn.sonicadigital.com.br/entra21/storage/settings/1/original-691cbe5cd50d1.png" alt="Entra 21" />
+            </h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/html.html">HTML</a>
+            </li>
+            <li>
+                <a href="/css.html">CSS</a>
+            </li>
+            <li>
+                <a href="/java.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="frontend_backend.html">FrontEnd e BackEnd</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+            </header>
+           <main>
+            <section>
+            <h2>Formulário de Contato</h2>
+    <form action="enviar.php" method="post">
+        <div>
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" required placeholder="Digite seu nome completo">
+        </div>
+                <div>
+                    <label for="email_usuario">E-mail:</label>
+                    <input type="email" id="email_usuario" name="email_usuario" required>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <hr>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade" required>
+                        <option value="">Selecione uma cidade</option>
+                        <option value="cidade1">Balneário Camboriú</option>
+                        <option value="cidade2">Florianópolis</option>
+                        <option value="cidade3">Joinville</option>
+                        <option value="cidade4">Blumenau</option>
+                        <option value="cidade5">São José</option>
+                        <option value="cidade6">Timbó</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required maxlength="100"></textarea>
+                </div>
+                <div>
+                    <label for="label_sexo">Sexo:</label>
+                            <div>
+                            <div>
+                                <input type="radio" id="sexo_feminino" name="sexo" value="f">
+                                <label for="sexo_feminino">Feminino</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="sexo_outro" name="sexo" value="o">  
+                                <label for="sexo_outro">Outro</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="sexo_masculino" name="sexo" value="m" checked>
+                                <label for="sexo_masculino">Masculino</label>
+                            </div>
+                 <div>
+                    <button type='submit'>Enviar dados</button>
+                </div>
+        </form>
+        </section>
+            </main>
+    </body>
+</html>
